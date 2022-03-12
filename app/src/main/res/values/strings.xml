@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AlbertoTarea13_PMDM</string>
+    <string name="txtuser">USUARIO</string>
+    <string name="txtpass">CONTRASEÑA</string>
+    <string name="butregistro">REGISTRO ABONADOS</string>
+    <string name="txtnombre">NOMBRE</string>
+    <string name="txtapell">APELLIDOS</string>
+    <string name="txttlfn">TLFN</string>
+    <string name="txtplaza">PLAZA</string>
+    <string name="txtmatricula">MATRÍCULA</string>
+    <string name="swtichdisca">DISCAPACITADO</string>
+</resources>
