@@ -9,4 +9,6 @@
     <string name="txtplaza">PLAZA</string>
     <string name="txtmatricula">MATRÍCULA</string>
     <string name="swtichdisca">DISCAPACITADO</string>
+    <string name="swtabon">ABONADO</string>
+    <string name="alertnew">ENTRADA VEHÍCULO</string>
 </resources>

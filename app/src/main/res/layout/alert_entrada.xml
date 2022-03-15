@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#B718438E">
+
+    <Switch
+        android:id="@+id/swtAdisca"
+        android:layout_width="53dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="24dp"
+        android:foregroundGravity="center_vertical|center"
+        android:gravity="center"
+        android:textColor="#98E4D3"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/swtAabon"
+        android:layout_width="53dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="24dp"
+        android:foregroundGravity="center_vertical|center"
+        android:gravity="center"
+        android:textColor="#98E4D3"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/swtichdisca"
+        android:textColor="#98E4D3"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/swtAdisca"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/swtabon"
+        android:textColor="#98E4D3"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/swtAabon"
+        app:layout_constraintStart_toStartOf="@+id/swtAabon" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="190dp"
+        android:layout_height="14dp"
+        android:background="#2DBDE8"
+        android:backgroundTint="#2E49AC"
+        android:gravity="center"
+        android:text="@string/alertnew"
+        android:textColor="#009E79"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="47dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/txtmatricula"
+        android:textColor="#98E4D3"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/edtAmat"
+        android:layout_width="106dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="28dp"
+        android:foregroundGravity="bottom"
+        android:gravity="bottom"
+        android:textColor="#98E4D3"
+        android:textColorHint="#A63636"
+        android:textColorLink="#316A34"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+</androidx.constraintlayout.widget.ConstraintLayout>
