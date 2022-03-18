@@ -15,44 +15,44 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ActivityMenu extends AppCompatActivity {
     Button butcontext, butentrada, butbloq,butbar,butinfo;
+    EditText edtmat;
+    Switch swtabon ,swtdisc;
+    private static boolean disc, abon;
+    private static String mat;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
         butentrada = findViewById(R.id.butentrada);
-
-
+        edtmat = findViewById(R.id.edtRmat);
+        swtdisc = findViewById(R.id.swtRdisc);
+        swtabon = findViewById(R.id.swtRabon);
+        disc = false;
+        abon = false;
 
 
         butentrada.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showAlertDialog();
+                mat = edtmat.getText().toString();
+
+
+
             }
         });
-    }
-
-    private void showAlertDialog() {
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(getApplicationContext());
-        final View customlayout = getLayoutInflater().inflate(R.layout.alert_entrada,null);
-
-        builder.setView(customlayout);
-        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+        swtdisc.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                EditText edtmat = customlayout.findViewById(R.id.edtAmat);
-                Switch swtdisc = customlayout.findViewById(R.id.swtAdisca);
-                Switch swtabon = customlayout.findViewById(R.id.swtAabon);
-
-
-
-
-
+            public void onClick(View view) {
+                disc = !disc;
             }
         });
-        AlertDialog dialog = builder.create();
+        swtabon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                abon = !abon;
+            }
+        });
 
-        dialog.show();
+
     }
 }
