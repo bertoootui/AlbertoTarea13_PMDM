@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.albertotarea13_pmdm"
-        minSdk 29
+        minSdk 30
         targetSdk 31
         versionCode 1
         versionName "1.0"

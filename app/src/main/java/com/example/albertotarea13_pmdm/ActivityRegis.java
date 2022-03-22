@@ -70,7 +70,7 @@ public class ActivityRegis extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-                else
+                if(doc.exists())
                 {
                     try {
                         OutputStreamWriter os = new OutputStreamWriter(new FileOutputStream(doc));
